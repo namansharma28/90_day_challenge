@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Hero from "@/app/components/Hero";
 import AboutSection from "./AboutSection";
 import HowItWorks from "./HowItWorks";
@@ -30,7 +29,7 @@ const Main = () => {
         {/* About Section */}
         <section
           id="about"
-          className="w-full min-h-[80vh] flex items-center justify-center"
+          className="w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center"
         >
           <AboutSection />
         </section>
@@ -38,37 +37,37 @@ const Main = () => {
         {/* Features Section */}
         <section
           id="features"
-          className="w-full min-h-[80vh] flex items-center justify-center bg-white border-t border-gray-200"
+          className="w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center "
         >
           <HowItWorks />
         </section>
         <section
           id="features"
-          className="w-full min-h-[80vh] flex items-center justify-center bg-white border-t border-gray-200"
+          className="w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center "
         >
           <WhyJoin />
         </section>
         <section
           id="features"
-          className="w-full min-h-[80vh] flex items-center justify-center bg-white border-t border-gray-200"
+          className="w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center"
         >
           <SolutionSection />
         </section>
         <section
           id="features"
-          className="w-full min-h-[80vh] flex items-center justify-center bg-white border-t border-gray-200"
+          className="w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center"
         >
           <ReviewsSection />
         </section>
         <section
           id="features"
-          className="w-full min-h-[80vh] flex items-center justify-center bg-white border-t border-gray-200"
+          className="w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center"
         >
           <FAQ />
         </section>
         <section
           id="features"
-          className="w-full min-h-[80vh] flex items-center justify-center bg-white border-t border-gray-200"
+          className="w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center"
         >
           <RegisterFooter />
         </section>

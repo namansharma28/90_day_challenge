@@ -29,11 +29,11 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10">
+    <section className="max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-16 grid md:grid-cols-2 gap-8 md:gap-10">
       {/* Left column */}
       <div className="flex flex-col justify-center">
         <span className="text-pink-500 font-medium mb-2">★ FAQ</span>
-        <h2 className="text-5xl font-bold leading-tight">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
           Got Questions? <br /> We Got Answers
         </h2>
       </div>
@@ -45,13 +45,13 @@ export default function FAQ() {
           return (
             <div
               key={index}
-              className={`rounded-xl p-5 transition-all duration-300 cursor-pointer shadow-md ${
+              className={`rounded-xl p-4 md:p-5 transition-all duration-300 cursor-pointer shadow-md ${
                 isOpen ? "bg-black text-white" : "bg-white text-black"
               }`}
               onClick={() => setOpenIndex(isOpen ? null : index)}
             >
               <div className="flex justify-between items-center">
-                <h6 className="font-semibold text-lg">{item.question}</h6>
+                <h6 className="font-semibold text-base md:text-lg pr-4">{item.question}</h6>
                 <span
                   className={`transform transition-transform duration-300 ${
                     isOpen ? "rotate-180" : "rotate-0"
@@ -67,7 +67,7 @@ export default function FAQ() {
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
-                    className="mt-3 text-sm relative"
+                    className="mt-3 text-sm md:text-base relative"
                   >
                     {item.answer}
                     {/* Simple particle dots */}

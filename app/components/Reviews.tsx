@@ -43,24 +43,24 @@ export default function ReviewsSection() {
         <p className="text-gray-800 mt-1">What our students say about us.</p>
       </div>
 
-      <div className="flex overflow-x-auto gap-6 px-4">
+      <div className="flex overflow-x-auto gap-4 md:gap-6 px-4 pb-4 scrollbar-hide">
         {reviews.map((review, i) => (
           <div
             key={i}
-            className="flex-shrink-0 w-72 bg-white border border-dashed border-gray-200 rounded-2xl p-5 shadow-sm"
+            className="flex-shrink-0 w-64 md:w-72 bg-white border border-dashed border-gray-200 rounded-2xl p-4 md:p-5 shadow-sm"
           >
-            <div className="w-24 h-24 mb-4 relative rounded-full overflow-hidden mx-auto">
+            <div className="w-20 h-20 md:w-24 md:h-24 mb-4 relative rounded-full overflow-hidden mx-auto">
               <Image src={review.avatar} alt={review.username} fill className="object-cover" />
             </div>
-            <p className="text-gray-900 font-semibold text-center">{review.username}</p>
-            <p className="text-gray-700 mt-2 text-center">{review.text}</p>
+            <p className="text-gray-900 font-semibold text-center text-sm md:text-base">{review.username}</p>
+            <p className="text-gray-700 mt-2 text-center text-sm md:text-base">{review.text}</p>
           </div>
         ))}
       </div>
 
-      <div className="mt-12 flex justify-center">
-        <div className="bg-gray-900 text-white rounded-2xl p-8 text-center max-w-lg">
-          <h3 className="text-xl font-bold mb-4">
+      <div className="mt-8 md:mt-12 flex justify-center px-4">
+        <div className="bg-gray-900 text-white rounded-2xl p-6 md:p-8 text-center max-w-lg w-full">
+          <h3 className="text-lg md:text-xl font-bold mb-4">
             Having a career-related query? We're here to answer.
           </h3>
           <a
